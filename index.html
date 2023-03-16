@@ -566,7 +566,9 @@
               />
             </label>
             <button type="subscribe" class="footer-subscribe-btn">
-              Subscribe
+              <svg class="btn-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-subscribe"></use></svg
+              >Subscribe
             </button>
           </form>
         </div>
@@ -578,39 +580,77 @@
         <button type="button" class="modal-close" data-modal-close>X</button>
         <p class="form-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="username item list">
-            Name
-            <input type="text" name="username" />
-          </label>
-          <label class="phone item list">
-            Phone
-            <input type="tel" name="phone" />
-          </label>
-          <label class="email item list">
-            Email
-            <input type="email" name="email" />
-          </label>
+          <div class="form-group">
+            <label class="username form-label list">
+              <span>Name</span>
+              <div class="form-control">
+                <input
+                  type="text"
+                  name="username"
+                  class="form-input"
+                  required
+                />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="phone form-label list">
+              <span>Phone</span>
 
-          <label class="comment item list">
-            Comment
-            <textarea
-              name="comment"
-              rows="5"
-              placeholder="Text input"
-              class="text-input"
-            ></textarea>
-          </label>
-          <label class="privacy-policy">
-            <input
-              type="checkbox"
-              name="Privacy Policy"
-              value="Agree"
-              checked
-            />
-            I accept the terms and conditions of the
-            <a href="./">Privacy Policy</a>
-          </label>
-          <button type="send" class="form-btn">Send</button>
+              <div class="form-control">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-input"
+                  pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/"
+                />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="email form-label list">
+              <span>Email</span>
+              <div class="form-control">
+                <input type="email" name="email" class="form-input" required />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="textarea-comment form-label list">
+              <span> Comment</span>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+                class="form-textarea"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="privacy-policy form-label">
+              <input
+                type="checkbox"
+                name="Privacy Policy"
+                value="Agree"
+                checked
+              />
+              <span>
+                I accept the terms and conditions of the
+                <a href="./">Privacy Policy</a></span
+              >
+            </label>
+          </div>
+          <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
     </div>
