@@ -556,16 +556,19 @@
         </div>
         <div class="footer-form">
           <form class="subsribe-form">
-            <label class="footer-email item list">
-              Email
+            <div class="subscribe-group">
+              <label for="footer-email" class="footer-email-lbl item list">
+                <span>Subscribe</span>
+              </label>
               <input
+                id="footer-email"
                 type="email"
                 name="footer-email"
                 placeholder="Email"
-                class="email-item"
+                class="email-input"
               />
-            </label>
-            <button type="subscribe" class="footer-subscribe-btn">
+            </div>
+            <button type="send" class="footer-subscribe-btn standard-button">
               <svg class="btn-icon" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-subscribe"></use></svg
               >Subscribe
@@ -577,44 +580,53 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>X</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <span>
+            <svg class="btn-icon" width="8px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </span>
+        </button>
         <p class="form-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-group">
-            <label class="username form-label list">
+            <label for="username" class="username form-label list">
               <span>Name</span>
-              <div class="form-control">
-                <input
-                  type="text"
-                  name="username"
-                  class="form-input"
-                  required
-                />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#icon-person"></use>
-                </svg>
-              </div>
             </label>
+            <div class="form-control">
+              <input
+                id="username"
+                type="text"
+                name="username"
+                class="form-input"
+                required
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-group">
-            <label class="phone form-label list">
+            <label for="phone" class="phone form-label list">
               <span>Phone</span>
-
-              <div class="form-control">
-                <input
-                  type="tel"
-                  name="phone"
-                  class="form-input"
-                  pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/"
-                />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-              </div>
             </label>
+            <div class="form-control">
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                class="form-input"
+                pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-group">
-            <label for="email" class="email form-label list"> Email </label>
+            <label for="email" class="email form-label list">
+              <span>Email</span>
+            </label>
             <div class="form-control">
               <input
                 id="email"
@@ -631,7 +643,7 @@
 
           <div class="form-group">
             <label for="comment" class="textarea-comment form-label list">
-              Comment
+              <span>Comment</span>
             </label>
             <textarea
               name="comment"
@@ -644,18 +656,19 @@
           <div class="checkbox form-group">
             <input
               type="checkbox"
-              class="form-checkbox"
+              class="form-checkbox is-hidden"
               id="policy"
               name="policy"
               value="policy"
-              checked
             />
-            <label class="privacy-policy form-label" for="policy">
-              I accept the terms and conditions of the
-              <a href="./">Privacy Policy</a>
+            <label class="form-label form-label-checkbox" for="policy">
+              <span>
+                I accept the terms and conditions of the
+                <a href="./" class="privacy-policy"> Privacy Policy</a></span
+              >
             </label>
           </div>
-          <button type="submit" class="form-btn">Send</button>
+          <button type="submit" class="form-btn standard-button">Send</button>
         </form>
       </div>
     </div>
