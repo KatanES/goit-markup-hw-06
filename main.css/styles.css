@@ -755,9 +755,20 @@ a {
   transform: translateY(-50%);
 }
 
+.form-checkbox::before {
+  content: "";
+}
+
+.checkbox {
+  display: flex;
+  gap: 8px;
+}
+
 .form-btn {
   align-items: center;
   padding: 16px 32px;
+  display: flex;
+  justify-content: center;
 
   width: 169px;
   height: 56px;

@@ -614,40 +614,45 @@
             </label>
           </div>
           <div class="form-group">
-            <label class="email form-label list">
-              <span>Email</span>
-              <div class="form-control">
-                <input type="email" name="email" class="form-input" required />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#icon-email"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="email" class="email form-label list"> Email </label>
+            <div class="form-control">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-input"
+                required
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-group">
-            <label class="textarea-comment form-label list">
-              <span> Comment</span>
-              <textarea
-                name="comment"
-                rows="5"
-                placeholder="Text input"
-                class="form-textarea"
-              ></textarea>
+            <label for="comment" class="textarea-comment form-label list">
+              Comment
             </label>
+            <textarea
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              class="form-textarea"
+              id="comment"
+            ></textarea>
           </div>
-          <div class="form-group">
-            <label class="privacy-policy form-label">
-              <input
-                type="checkbox"
-                name="Privacy Policy"
-                value="Agree"
-                checked
-              />
-              <span>
-                I accept the terms and conditions of the
-                <a href="./">Privacy Policy</a></span
-              >
+          <div class="checkbox form-group">
+            <input
+              type="checkbox"
+              class="form-checkbox"
+              id="policy"
+              name="policy"
+              value="policy"
+              checked
+            />
+            <label class="privacy-policy form-label" for="policy">
+              I accept the terms and conditions of the
+              <a href="./">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="form-btn">Send</button>
