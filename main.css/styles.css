@@ -497,19 +497,19 @@ a {
   background-color: #31d0aa;
 }
 
-.subscribe-form {
+.subscribe-group {
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-email-lbl {
+.form {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .email-input {
-  min-width: 100%;
+  min-width: 264px;
   height: 40px;
   background-color: transparent;
 
