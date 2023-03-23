@@ -92,4 +92,28 @@
     width: 168px;
     height: 88px;
   }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-logo {
+    margin-right: 120px;
+  }
+
+  .footer-list {
+    margin-right: 80px;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .email-input {
+    min-width: 264px;
+  }
+
+  .footer-subscribe-btn {
+    margin-left: 24px;
+  }
 }

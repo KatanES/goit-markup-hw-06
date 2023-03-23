@@ -37,4 +37,28 @@
   .works {
     display: none;
   }
+
+  .mobile-h {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo .item {
+    margin-left: 80px;
+    margin-bottom: 72px;
+  }
+
+  .footer-social-list {
+    margin-left: 80px;
+    margin-bottom: 72px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .footer-subscribe-btn {
+    margin-left: 110px;
+  }
 }

@@ -48,4 +48,25 @@
   .works {
     display: none;
   }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    gap: 24px;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .email-input {
+    min-width: 264px;
+  }
+
+  .footer-subscribe-btn {
+    margin-left: 24px;
+  }
 }
