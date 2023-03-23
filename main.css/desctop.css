@@ -9,10 +9,17 @@
 
   .features-list {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .features-list .list-item {
     margin-left: 24px;
+  }
+
+  .features-title {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
   }
 
   .list-item::before {
@@ -25,6 +32,27 @@
     border-radius: 4px;
   }
 
+  /* WORKS */
+
+  .works {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .works-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work:not(:last-child) {
+    display: flex;
+    padding-right: 24px;
+  }
+
+  /* TEAM */
+
   .team {
     margin-top: 0;
     margin-bottom: 0;
@@ -34,6 +62,7 @@
 
   .team-list {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -46,5 +75,21 @@
 
   .team-item-text {
     margin-bottom: 8px;
+  }
+
+  .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .customer {
+    display: flex;
+    width: 168px;
+    height: 88px;
   }
 }

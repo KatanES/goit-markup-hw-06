@@ -7,25 +7,45 @@
     padding-top: 96px;
   }
 
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .features-list .list-item {
-    margin-left: 24px;
     padding-bottom: 72px;
     width: calc((100% - 24px) / 2);
   }
 
   .features-title {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
+    text-align: start;
   }
 
   .list-item::before {
     display: none;
   }
-}
 
-@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .team-list .item {
     width: calc((100% - 24px) / 2);
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .customer {
+    width: calc((100% - 24px) / 3);
+    width: 168px;
+    height: 88px;
+  }
+
+  .works {
+    display: none;
   }
 }

@@ -11,13 +11,9 @@
     width: 100%;
     padding-bottom: 72px;
   }
-
   .features-title {
-    font-weight: 700;
-    font-size: 36px;
     text-align: center;
   }
-
   .list-item::before {
     display: none;
   }
@@ -26,5 +22,19 @@
     margin-top: 72px;
     margin-bottom: 72px;
     width: 100%;
+  }
+
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .customer {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  .works {
+    display: none;
   }
 }
