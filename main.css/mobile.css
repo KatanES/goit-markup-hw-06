@@ -10,6 +10,7 @@
   }
 
   .hero-title {
+    max-width: 318px;
     margin-top: 0;
     margin-bottom: 72px;
     line-height: 40px;
@@ -31,7 +32,6 @@
 
   .features-title {
     text-align: center;
-    font-style: normal;
     font-weight: 700;
   }
   .list-item::before {
@@ -80,5 +80,21 @@
 
   .footer-subscribe-btn {
     margin-left: 110px;
+  }
+
+  .filters {
+    padding-bottom: 48px;
+    padding-top: 36px;
+  }
+
+  .filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+
+  .examples-list .item {
+    margin-bottom: 48px;
   }
 }

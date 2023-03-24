@@ -1,6 +1,6 @@
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
   }
 
   .hero {
@@ -10,7 +10,7 @@
   }
 
   .hero-title {
-    margin-top: 0;
+    max-width: 494px;
     margin-bottom: 48px;
 
     line-height: 60px;
@@ -68,8 +68,6 @@
   /* TEAM */
 
   .team {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -94,8 +92,9 @@
   }
 
   .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    /* padding-top: 130px; */
+    /* padding-bottom: 120px; */
+    /* padding-left: 0; */
   }
 
   .customers-list {
@@ -113,6 +112,7 @@
   .footer {
     display: flex;
     flex-wrap: nowrap;
+    padding-left: 0;
 
     /* align-items: baseline; */
   }
@@ -121,20 +121,8 @@
     margin-right: 120px;
   }
 
-  .footer-logo .item {
-    margin-left: 0;
-  }
-
   .footer-list {
     margin-right: 80px;
-  }
-
-  .footer-social-list {
-    margin-left: 0;
-  }
-
-  .mobile-h {
-    margin-left: 0;
   }
 
   .footer-form {
@@ -144,10 +132,33 @@
 
   .email-input {
     min-width: 264px;
-    margin: 0;
   }
 
   .footer-subscribe-btn {
     margin-left: 24px;
+  }
+
+  .filters {
+    padding-bottom: 146px;
+    padding-top: 96px;
+  }
+
+  .filters-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 96px;
+    padding: 0px;
+    gap: 24px;
+  }
+
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .examples-list .item {
+    width: calc((100% - 54px) / 3);
   }
 }

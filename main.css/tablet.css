@@ -10,6 +10,7 @@
   }
 
   .hero-title {
+    max-width: 494px;
     margin-top: 0;
     margin-bottom: 40px;
     line-height: 60px;
@@ -101,5 +102,27 @@
 
   .footer-subscribe-btn {
     margin-left: 24px;
+  }
+
+  .filters {
+    padding-bottom: 96px;
+    padding-top: 52px;
+  }
+
+  .filters-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 52px;
+  }
+
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .examples-list .item {
+    width: calc((100% - 24px) / 2);
   }
 }

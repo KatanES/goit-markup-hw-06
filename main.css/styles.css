@@ -267,32 +267,35 @@ a {
 
 /* FEATURES */
 .features {
-  padding-top: 120px;
+  padding-top: 96px;
 }
 
 .features-list {
   gap: 24px;
+  margin-left: 16px;
 }
 
-/* .features-list .list-item {
-  margin-left: 24px;
-} */
+.features-list .list-item {
+  width: 100%;
+  padding-bottom: 72px;
+}
 
 .features-title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   color: var(--primary-header-color);
 }
 
-/* .list-item::before {
-  display: block;
+.list-item::before {
+  display: none;
   content: "";
   height: 112px;
   background-color: #f4f4fd;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-} */
+}
 
 .icon-antenna::before {
   background-image: url(../images/icons/antenna.svg);
@@ -310,15 +313,15 @@ a {
   background-image: url(../images/icons/astronaut.svg);
 }
 
-/* WORKS
-
+/* WORKS  */
 .works {
+  display: none;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .works-list {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -326,7 +329,7 @@ a {
 .work:not(:last-child) {
   display: flex;
   padding-right: 24px;
-} */
+}
 
 /* TEAM */
 .team {
@@ -355,6 +358,8 @@ a {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .team-item-text {
@@ -417,6 +422,9 @@ a {
   align-items: center;
   justify-content: center;
   transition: border cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: calc((100% - 24px) / 2);
+  margin-bottom: 72px;
 }
 
 .customer:is(:hover, :focus) {
@@ -568,19 +576,16 @@ a {
 
 /* portfolio page */
 
-.filters {
+/* .filters {
   padding-bottom: 146px;
-}
-
-.filters {
   padding-top: 96px;
-}
+} */
 
 .filters-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 96px;
+  /* display: flex; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  /* margin-bottom: 96px; */
   padding: 0px;
   gap: 24px;
 }
