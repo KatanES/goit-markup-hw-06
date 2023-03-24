@@ -3,6 +3,19 @@
     max-width: 768px;
   }
 
+  .hero {
+    padding: 112px 0;
+    max-width: 768px;
+    height: 436px;
+  }
+
+  .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 60px;
+    font-size: 56px;
+  }
+
   .features {
     padding-top: 96px;
   }
