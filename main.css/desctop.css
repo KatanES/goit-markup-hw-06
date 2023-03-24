@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1200px;
   }
@@ -66,6 +66,8 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    /* margin-left: 156px;
+    margin-right: 156px; */
   }
 
   .team-text {
@@ -84,6 +86,7 @@
 
   .customers-list {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
@@ -95,21 +98,30 @@
 
   .footer {
     display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+
+    /* align-items: baseline; */
   }
 
   .footer-logo {
     margin-right: 120px;
   }
 
+  .footer-logo .item {
+    margin-left: 0;
+  }
+
   .footer-list {
     margin-right: 80px;
   }
 
-  /* .mobile-h {
-    justify-content: baseline;
-    margin-left: 80px;
-  } */
+  .footer-social-list {
+    margin-left: 0;
+  }
+
+  .mobile-h {
+    margin-left: 0;
+  }
 
   .footer-form {
     display: flex;
@@ -118,6 +130,7 @@
 
   .email-input {
     min-width: 264px;
+    margin: 0;
   }
 
   .footer-subscribe-btn {

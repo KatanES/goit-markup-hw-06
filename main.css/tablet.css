@@ -28,6 +28,8 @@
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 
   .team-list .item {
@@ -38,10 +40,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 108px;
+    padding-right: 108px;
   }
   .customer {
-    width: calc((100% - 24px) / 3);
-    width: 168px;
+    width: calc((100% - 48px) / 3);
+
     height: 88px;
   }
 
@@ -52,10 +56,22 @@
   .footer {
     display: flex;
     flex-wrap: wrap;
+
+    padding-left: 108px;
   }
 
   .footer-logo {
     gap: 24px;
+  }
+
+  .footer-logo .item {
+    margin-left: 0;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .footer-social-list {
+    margin: 0;
   }
 
   .footer-form {
@@ -64,12 +80,10 @@
 
   .mobile-h {
     justify-content: flex-start;
-    margin-left: 80px;
   }
 
   .email-input {
     min-width: 264px;
-    margin-left: 80px;
   }
 
   .footer-subscribe-btn {

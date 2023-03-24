@@ -23,14 +23,14 @@ body {
   text-decoration: none;
 }
 
-.container {
-  /* width: 1158px; */
+/* .container {
+  width: 1158px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 img {
   display: block;
@@ -270,9 +270,9 @@ a {
   padding-top: 120px;
 }
 
-/* .features-list {
-  display: flex;
-} */
+.features-list {
+  gap: 24px;
+}
 
 /* .features-list .list-item {
   margin-left: 24px;
