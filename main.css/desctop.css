@@ -95,6 +95,7 @@
 
   .footer {
     display: flex;
+    align-items: baseline;
   }
 
   .footer-logo {
@@ -105,8 +106,14 @@
     margin-right: 80px;
   }
 
+  /* .mobile-h {
+    justify-content: baseline;
+    margin-left: 80px;
+  } */
+
   .footer-form {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .email-input {

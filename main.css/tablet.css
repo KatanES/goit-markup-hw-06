@@ -62,8 +62,14 @@
     display: flex;
   }
 
+  .mobile-h {
+    justify-content: flex-start;
+    margin-left: 80px;
+  }
+
   .email-input {
     min-width: 264px;
+    margin-left: 80px;
   }
 
   .footer-subscribe-btn {
