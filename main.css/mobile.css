@@ -3,6 +3,10 @@
     max-width: 428px;
   }
 
+  .logo {
+    width: 50%;
+  }
+
   .hero {
     padding: 112px 0;
     width: 100%;
@@ -16,7 +20,21 @@
       url(../images/hero/mobile-bg-2.jpg);
   }
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/mobile-bg-2x.jpg);
+    }
+  }
+
   .hero-title {
+    margin: 0 auto;
     max-width: 318px;
     margin-top: 0;
     margin-bottom: 72px;
@@ -43,6 +61,10 @@
   }
   .list-item::before {
     display: none;
+  }
+
+  .team-container {
+    max-width: 312px;
   }
 
   .team-list .item {
