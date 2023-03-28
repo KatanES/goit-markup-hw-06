@@ -31,23 +31,35 @@
           class="logo"
           ><span>Web</span>Studio</a
         >
-        <button type="button" class="header-btn-mobile">
+        <button
+          type="button"
+          class="header-btn-mobile menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           +
           <svg class="header-nav-icon" width="30" height="19">
             <use href="./images/symbol-defs.svg#icon-hamburger"></use>
           </svg>
         </button>
 
-        <div class="header-nav-wrap">
+        <div
+          class="header-nav-wrap menu-container js-menu-container"
+          id="mobile-menu"
+        >
           <button type="button" class="header-btn-mobile-close">
             <span>
-              <svg class="header-btn-icon" width="8px" height="8px">
+              <svg
+                class="header-btn-icon menu-toggle js-close-menu"
+                width="8px"
+                height="8px"
+              >
                 <use href="./images/symbol-defs.svg#icon-close-modal"></use>
               </svg>
             </span>
           </button>
           <nav class="main-nav">
-            <ul class="site-nav list">
+            <ul class="site-nav list mobile-menu">
               <li class="item">
                 <a
                   href="./index.html"
@@ -745,5 +757,12 @@
       </div>
     </div>
     <script src="./js/main.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
