@@ -7,6 +7,21 @@
     width: 100%;
   } */
 
+  .header-nav-wrap {
+    background-color: transparent;
+    max-width: unset;
+    height: unset;
+    position: static;
+  }
+
+  .header-btn-mobile {
+    display: none;
+  }
+
+  .header-btn-mobile-close {
+    display: none;
+  }
+
   .main-nav {
     display: flex;
     align-items: center;
@@ -86,6 +101,10 @@
 
   .contacts a:is(:hover, :focus) {
     color: var(--pressed-state-color);
+  }
+
+  .mobile-social-list {
+    display: none;
   }
 
   /* HERO */
@@ -199,11 +218,11 @@
     margin-bottom: 8px;
   }
 
-  .customers {
-    /* padding-top: 130px; */
-    /* padding-bottom: 120px; */
-    /* padding-left: 0; */
-  }
+  /* .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 0;
+  } */
 
   .customers-list {
     display: flex;
